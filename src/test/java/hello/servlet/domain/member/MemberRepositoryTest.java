@@ -45,7 +45,7 @@ class MemberRepositoryTest {
         List<Member> result = memberRepository.findAll();
 
         //than
-//        Assertions.assertThat(result.size()).isEqualTo(2);
+//        Assertions.assertThat(result.size()).isEqualTo(2); Alt + Enter ->  assertThat(result.size()).isEqualTo(2);
 //        Assertions.assertThat(result).contains(member1, member2);
         assertThat(result.size()).isEqualTo(2);
         assertThat(result).contains(member1, member2); // 'result' 안에 member1, memeber2 객체가 있냐

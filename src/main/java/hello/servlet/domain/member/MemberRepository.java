@@ -29,12 +29,12 @@ public class MemberRepository {
         return member;
     }
 
-    public Member findById(Long id) {
+    public Member findById(Long id) { // 회원 ID로 찾기
         return store.get(id);
     }
 
     public List<Member> findAll(){
-        return new ArrayList<>(store.values()); // store 자체를 보호하기 위함
+        return new ArrayList<>(store.values()); // store에 있는 모든 값을 꺼내 새로운 ArrayList에 넣음, store에 있는 values를  보호하기 위함
     }
 
     public void clearStroe(){
