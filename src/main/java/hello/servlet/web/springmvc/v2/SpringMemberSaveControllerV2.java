@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
-
 @RequestMapping("springmvc/v2/members")
 public class SpringMemberSaveControllerV2 {
 
